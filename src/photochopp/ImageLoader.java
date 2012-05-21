@@ -27,7 +27,6 @@ public class ImageLoader {
 		try {
 			ImageIO.write(imagem, "png" , new File(caminho));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

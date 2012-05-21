@@ -19,8 +19,10 @@ public class EfeitoPretoBranco
 
 				int intensity = (int) (pixel.getRed() * .3 + pixel.getGreen() * .59
 						+ pixel.getBlue() * .11);
-				
-				imagemDestino.setRGB(i, j, intensity);
+				pixel.setBlue(intensity);
+				pixel.setRed(intensity);
+				pixel.setGreen(intensity);
+				imagemDestino.setRGB(i, j, pixel.getHexadecimal());
 			}
 		
 		imgLoader.WriteImage(imagemDestino, caminhoDestino);

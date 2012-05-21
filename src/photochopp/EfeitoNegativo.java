@@ -11,7 +11,7 @@ public class EfeitoNegativo
 		int imgWidth = imagem.getWidth();
 		int imgHeigth = imagem.getHeight();
 		
-		BufferedImage imagemDestino = new BufferedImage(imgWidth, imgHeigth, BufferedImage.TYPE_INT_BGR);
+		BufferedImage imagemDestino = new BufferedImage(imgWidth, imgHeigth, BufferedImage.TYPE_INT_RGB);
 		
 		for (int i = 0; i < imgWidth; i++)
 			for (int j = 0; j < imgHeigth; j++) {
