@@ -31,7 +31,8 @@ public class BlurFilter {
 					0.111f, 0.111f, 0.111f, 0.111f, };
 		if (i == 2) {
 			float[] matriz2 = new float[400];
-			for (int k = 0; k < 400; k++) {
+			for (int k = 0; k < 400; k++) 
+			{
 				matriz2[k] = 1.0f / 400.f;
 			}
 			return matriz2;

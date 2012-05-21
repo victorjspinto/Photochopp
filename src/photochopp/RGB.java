@@ -16,6 +16,13 @@ public class RGB {
 		this.alpha 	= (hexadecimal & 0xFF000000) >>> 24;
 	}
 
+	public RGB(int blue, int red, int green) {
+		this.red = red;
+		this.blue = blue;
+		this.green = green;
+		this.alpha = 255;
+	}
+
 	public void setRGB(int hexadecimal) {
 		Color color = new Color(hexadecimal);
 		this.green = color.getGreen();

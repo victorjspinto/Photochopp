@@ -24,7 +24,11 @@ public class ImageLoader {
 	}
 
 	public void WriteImage(BufferedImage imagem, String caminho) {
-		// TODO Auto-generated method stub
-		
+		try {
+			ImageIO.write(imagem, "png" , new File(caminho));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

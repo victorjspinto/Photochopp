@@ -1,5 +1,7 @@
 import java.io.IOException;
 
+import photochopp.EfeitoBlur;
+
 import filters.BlurFilter;
 import filters.ColorFilter;
 import filters.RotateFilter;
@@ -11,18 +13,18 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args){
-		blurTest();
+		new EfeitoBlur().aplicarEfeitoBlur("/home/viktor/Workspace/Photochopp/image.jpg");
 	}
 	
 	public static void colorTest() {
-		new ColorFilter("/home/luk4x/Projects/Photochopp/image.jpg");
+		new ColorFilter("/home/viktor/Workspace/Photochopp/image.jpg");
 	}
 
 	public static void blurTest() {
-		new BlurFilter("/home/luk4x/Projects/Photochopp/image.jpg");
+		new BlurFilter("/home/viktor/Workspace/Photochopp/image.jpg");
 	}
 	
 	public static void rotateTest() throws IOException {
-		new RotateFilter("/home/luk4x/Projects/Photochopp/image.jpg", 0);
+		new RotateFilter("/home/viktor/Workspace/Photochopp/image.jpg", 0);
 	}
 }
